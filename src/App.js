@@ -1,57 +1,52 @@
-import React, { Component } from 'react';
+import React, { useContext } from 'react';
+import { Route, Switch } from 'react-router-dom';
+import Container from './components/Container/Container';
+import Account from './components/AccountPage/Account';
+import Navigation from './components/Navigation/Navigation';
+import Home from './DefaultLanding';
+import DefaultLanding from './DefaultLanding';
+import SignUp from './components/Navigation/SignUp';
+import Graph from './components/Graph/Graph';
+import { ProtectedRoute } from './components/auth/protectedRoute';
+import PageNotFound from './components/Pages/PageNotFound';
+import LoginPage from './components/Pages/LoginPage';
+import SignOutPage from './components/Pages/SignOutPage';
+import About from './components/Navigation/About';
+import styled from 'styled-components';
+import { ModalContext, RegisterContext } from './Context/Store';
 
-import Header from './components/Layout/Header';
+const App = () => {
+	const [ modal ] = useContext(ModalContext);
+	const [ register ] = useContext(RegisterContext);
 
-import Container from './components/Verb/index';
+	const modalStorage = localStorage.setItem('modal', modal);
 
-import Modal from './components/Modal/Modal';
-
-class App extends Component {
-  constructor() {
-    super();
-
-    this.state = {
-      isShowing: false,
-    };
-  }
-
-  openModalHandler = () => {
-    this.setState({
-      isShowing: true,
-    });
-  };
-
-  closeModalHandler = () => {
-    this.setState({
-      isShowing: false,
-    });
-  };
-
-  render() {
-    const { isShowing } = this.state;
-    return (
-      <div className="app">
-        <Header />
-        <div className="app-wrapper">
-          {isShowing ? (
-            <div onClick={this.closeModalHandler} className="back-drop" />
-          ) : null}
-          <Container />
-          <div className="made-with-love" onClick={this.openModalHandler}>
-            Made with
-            <span role="img" aria-label="heart">
-              ❤️
-            </span>{' '}
-            in
-            <span role="img" aria-label="colombia">
-              🇨🇴
-            </span>
-          </div>
-          <Modal show={isShowing} close={this.closeModalHandler} />
-        </div>
-      </div>
-    );
-  }
-}
+	return (
+		<div>
+			{/* <Header /> */}
+			<ContainingDiv>
+				<div className="app-wrapper">
+					<Switch>
+						<Route exact path="/" component={Home} />
+						<Route exact path="/login" component={LoginPage} />
+						<Route exact path="/my-account" component={Account} />
+						<ProtectedRoute exact path="/learn" component={Container} />
+						<Route exact path="/progress" component={Graph} />
+						<Route exact path="/about" component={About} />
+						<Route exact path="/goodbye" component={SignOutPage} />
+						<Route path="/*" component={PageNotFound} />
+					</Switch>
+				</div>
+			</ContainingDiv>
+		</div>
+	);
+};
 
 export default App;
+
+const ContainingDiv = styled.div`
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+`;

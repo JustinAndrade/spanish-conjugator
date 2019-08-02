@@ -1,0 +1,145 @@
+.chalkboard {
+	position: absolute;
+	background-image: url('../../assets/chalkboard.jpeg');
+	height: 100vh;
+	width: 100%;
+	z-index: -2;
+}
+
+.verb-streak {
+	display: flex;
+	justify-content: center;
+	color: #fff;
+}
+
+.current-best-streak {
+	width: 85px;
+	text-align: center;
+}
+
+.streak .verb {
+	font-size: 12px;
+}
+
+.streak-count {
+	font-size: 24px;
+	font-weight: 800;
+}
+
+.verb-info {
+	background-color: white;
+	border: 1px solid black;
+	width: 1200px;
+	height: 400px;
+	background: #f4f4f4;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 25px;
+	margin-left: 350px;
+	margin-top: 70px;
+}
+
+.verb-info h2 {
+	text-align: center;
+}
+
+.verb-info span {
+	color: #af2323;
+}
+
+.person-flex {
+	display: flex;
+	justify-content: flex-start;
+	text-align: center;
+	margin-bottom: 7.5px;
+}
+
+.person-flex div {
+	font-weight: 800;
+}
+
+.input-section {
+	margin-left: 50px;
+}
+
+.input-section input {
+	width: 915px;
+	height: 40px;
+	background: #f4f4f4;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 25px;
+	font-family: Righteous;
+	font-size: 24px;
+	line-height: 45px;
+	letter-spacing: 0.315em;
+	padding: 0 20px;
+	margin-top: 50px;
+	margin-left: 350px;
+	color: #909090;
+	margin-right: 50px;
+}
+
+.input {
+	font-size: 1.2rem;
+	border: none;
+	border-bottom: solid 2px #003893;
+	background-color: white;
+	width: 100%;
+	height: 30px;
+	margin-left: 1%;
+}
+
+.text-under-input {
+	display: flex;
+	justify-content: space-between;
+}
+
+.verb {
+	display: flex;
+}
+
+.twelve {
+	font-family: Righteous;
+	font-size: 24px;
+	line-height: 30px;
+	margin: 50px 0 0 50px;
+	color: #000000;
+}
+
+.twenty-four {
+	font-family: Righteous;
+	font-size: 48px;
+	line-height: 60px;
+	color: #af2323;
+	margin-left: 50px;
+}
+
+.tense {
+	font-family: Righteous;
+	font-size: 48px;
+	line-height: 60px;
+	color: #af2323;
+	margin-left: 50px;
+	margin-top: 30px;
+}
+
+.twenty-four span {
+	font-family: Righteous;
+	font-size: 36px;
+	line-height: 45px;
+	letter-spacing: 0.05em;
+
+	color: rgba(0, 0, 0, 0.25);
+}
+
+.current-best-streak {
+	margin-top: 120px;
+	display: flex;
+	width: 200px;
+}
+
+.percent {
+	color: #af2323;
+	margin: 0 20px;
+	font-size: 20px;
+	font-weight: bold;
+}
