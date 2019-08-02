@@ -1,0 +1,117 @@
+.page-container {
+	background-image: url('../../assets/login-background.jpeg');
+	background-repeat: stretch;
+	background-size: 100%;
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+}
+
+.login-container {
+	position: relative;
+	display: flex;
+	justify-content: space-around;
+	left: 425px;
+	top: 150px;
+	width: 1100px;
+	height: 650px;
+	background: #c86565;
+	padding-top: 50px;
+}
+
+.login h2 {
+	color: #fff;
+	font-size: 48px;
+	line-height: 60px;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 4);
+	margin-bottom: 75px;
+}
+
+.login span {
+	display: block;
+	color: #fff;
+	font-size: 18px;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, .25);
+}
+
+.login form {
+	display: flex;
+	flex-direction: column;
+}
+
+.login input {
+	margin: 20px 0;
+	background: #ffffff;
+	border: 1px solid #e5e5e5;
+	box-sizing: border-box;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 5px;
+}
+
+.login button {
+	color: #fff;
+	border: 1px solid #000;
+	font-family: Righteous;
+	font-size: 20px;
+	line-height: 30px;
+	text-align: center;
+	margin-top: 30px;
+	background: #af2323;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 0px;
+}
+
+/* Register */
+
+.register h2 {
+	color: #fff;
+	font-size: 48px;
+	line-height: 60px;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 4);
+	text-align: center;
+	margin-bottom: 75px;
+}
+
+.register span {
+	display: block;
+	color: #fff;
+	font-size: 18px;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, .25);
+	margin-bottom: 30px;
+}
+
+.register form {
+	display: flex;
+	flex-direction: column;
+}
+
+.register input {
+	margin: 10px 0;
+	background: #ffffff;
+	border: 1px solid #e5e5e5;
+	box-sizing: border-box;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 5px;
+	text-align: center;
+}
+
+.register button {
+	color: #fff;
+	border: 1px solid #000;
+	font-family: Righteous;
+	font-size: 20px;
+	line-height: 30px;
+	text-align: center;
+	margin-top: 30px;
+	background: #af2323;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 0px;
+}
+
+.login button:hover {
+	opacity: .8;
+}
+
+.register button:hover {
+	opacity: .8;
+}

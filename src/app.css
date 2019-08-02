@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700,800");
-@import url("https://fonts.googleapis.com/css?family=Saira");
+@import url("https://fonts.googleapis.com/css?family=Righteous");
+@import url("https://fonts.googleapis.com/css?family=Rancho");
 
 /* Global styles */
 
@@ -10,11 +11,17 @@ body {
 }
 
 .app-wrapper {
-	/* 	
-  margin-top: 10px;
-  padding: 10px 0; */
 	margin: 0 auto;
-	width: 75%;
+	width: 100%;
+}
+
+.app-wrapper .sc-bxivhb {
+	width: 100%;
+	margin: 0;
+}
+
+.klZdRP {
+	height: 0;
 }
 /* Desktop styles */
 
@@ -88,81 +95,11 @@ body {
 
 /* Verb streak styles */
 
-.verb-streak {
-	display: flex;
-	justify-content: center;
-}
-
-.current-best-streak {
-	padding: 5px 0;
-	margin: 5px 10px;
-	width: 85px;
-	text-align: center;
-}
-
-.streak {
-	font-size: 12px;
-}
-
-.streak-count {
-	font-size: 24px;
-	font-weight: 800;
-}
-
-/* Verb info styles */
-
-.verb-info {
-	background-color: white;
-	border: 1px solid black;
-	padding: 15px 20px;
-	border-radius: 20px;
-}
-
-/* Yo, Tu, Nosotros, etc. Styles */
-
-.person-flex {
-	display: flex;
-	justify-content: flex-start;
-	text-align: center;
-	margin-bottom: 7.5px;
-}
-
-.person-flex div {
-	font-weight: 800;
-}
-
-.input-section {
-	display: flex;
-	flex-wrap: nowrap;
-	text-align: center;
-	align-content: flex-end;
-	align-items: flex-end;
-	margin: 7% 0% 2% 0%;
-	position: relative;
-}
-
-.input-section input {
-	padding-left: 10px;
-}
-
-.input {
-	font-size: 1.2rem;
-	border: none;
-	border-bottom: solid 2px #003893;
-	background-color: white;
-	width: 100%;
-	height: 35px;
-	margin-left: 1%;
-}
-
-.text-under-input {
-	display: flex;
-	justify-content: space-between;
-}
-
 /* Helper text styles */
 
 .helper-text {
+	color: #fff;
+	font-size: 20px;
 	height: 85px;
 	position: relative;
 	padding: 10px 0;
@@ -172,57 +109,18 @@ body {
 	text-align: center;
 }
 
-/* Submit button styles */
-
-.submit-button {
-	font-size: 1.2rem;
-	font-family: "Open Sans";
-	border-radius: 5px;
-	padding: 10px 15px;
-	color: white;
-	background-color: #003893;
-	width: 70%;
-	position: absolute;
-	z-index: 0;
-	bottom: 0;
-	left: 15%;
-}
-
-/* Font styles */
-
-.tense {
-	font-size: 24px;
-	font-weight: 700;
-	text-transform: uppercase;
-}
-
-.twelve {
-	font-size: 12px;
-}
-
-.twenty-four {
-	font-size: 24px;
-	font-weight: 700;
-	text-transform: uppercase;
-}
-
-.twenty-four span {
-	font-weight: 400;
-	text-transform: none;
-}
-
 /* Settings styles */
 
 .settings {
-	margin-bottom: 10px;
+	position: absolute;
 	display: flex;
-	flex-direction: column;
 	align-items: center;
-	height: 130px;
 }
 
 .two-dropdowns {
+	color: #fff;
 	display: flex;
+	margin-left: 50px;
 }
 
 .settings-text {
@@ -239,21 +137,28 @@ body {
 }
 
 .button-options {
-	font-size: 0.8rem;
-	font-family: "Open Sans";
-	border-radius: 5px;
-	font-weight: 700;
-	height: 30px;
-	margin: 10px;
-	background-color: lightgray;
-	width: 110px;
-	float: left;
-	text-align: center;
+	width: 200px;
+	height: 40px;
+
+	background: #af2323;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	margin-left: 850px;
+	font-family: Righteous;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 22px;
+	line-height: 27px;
+
+	color: #ffffff;
 }
 
 /* Hover text styles */
 
 .hover-text {
+	height: 25px;
+	padding: 0 5px;
+	margin-top: 10px;
+	margin-right: 400px;
 	cursor: pointer;
 }
 
@@ -278,4 +183,8 @@ body {
 	transition: all 1.8s;
 	width: 100vw;
 	z-index: 1;
+}
+
+.text-under-input {
+	margin-left: 450px;
 }
